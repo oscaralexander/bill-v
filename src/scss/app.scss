@@ -3,8 +3,11 @@
 @import '~reset-css/sass/reset';
 
 :root {
-    --color-text: #334455;
-    --color-bg: #FFFFFF;
+    --color-text: #262C30;
+    --color-bg: #F6F0E6;
+
+    --color-1: #262C30;
+    --color-2: #F6F0E6;
 }
 
 * {
@@ -25,9 +28,13 @@ p {
 }
 
 h1, h2 {
-    color: #000;
     font-size: 32px;
     font-weight: 500;
+}
+
+h1 {
+    font-weight: 800;
+    letter-spacing: -0.015em;
 }
 
 .section {
