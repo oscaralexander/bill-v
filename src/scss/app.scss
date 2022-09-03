@@ -3,7 +3,7 @@
 @import '~reset-css/sass/reset';
 
 :root {
-    --color-text: #445566;
+    --color-text: #334455;
     --color-bg: #FFFFFF;
 }
 
@@ -25,6 +25,8 @@ p {
 }
 
 h1, h2 {
+    color: #000;
+    font-size: 32px;
     font-weight: 500;
 }
 
