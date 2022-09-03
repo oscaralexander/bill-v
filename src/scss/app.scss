@@ -3,11 +3,12 @@
 @import '~reset-css/sass/reset';
 
 :root {
-    --color-text: #FFF;
-    --color-bg: #131319;
+    --color-text: #223344;
+    --color-bg: #F9F8F7;
 }
 
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
+    font-family: Inter, sans-serif;
 }
