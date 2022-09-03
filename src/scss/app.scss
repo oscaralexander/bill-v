@@ -3,15 +3,20 @@
 @import '~reset-css/sass/reset';
 
 :root {
-    --color-text: #223344;
-    --color-bg: #F9F8F7;
+    --color-text: #445566;
+    --color-bg: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: Inter, sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.5;
 }
 
