@@ -11,4 +11,18 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: Inter, sans-serif;
+    font-size: 20px;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+.section {
+    padding: 0 80px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
 }
