@@ -1,0 +1,13 @@
+.questions {
+    z-index: 3;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__question {
+        font-weight: 600;
+    }
+}

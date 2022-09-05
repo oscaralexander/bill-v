@@ -6,8 +6,10 @@
     --color-text: #262C30;
     --color-bg: #F6F0E6;
 
-    --color-1: #262C30;
+    --color-1: #1C2023;
     --color-2: #F6F0E6;
+    --color-3: #FCC9CF;
+    --color-4: #469F39;
 }
 
 * {
@@ -19,12 +21,34 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: Inter, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.5;
+
+    @media (min-width: 768px) {
+        font-size: 22px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 24px;
+    }
+}
+
+body,
+html {
+    min-height: 100%;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: initial;
 }
 
 p {
     margin: 0 0 1.25em 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 h1, h2 {
@@ -33,20 +57,45 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 128px;
+    font-size: 64px;
     font-weight: 800;
+
+    @media (min-width: 768px) {
+        font-size: 128px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 160px;
+    }
 }
 
-.section {
-    padding: 80px 0;
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1em;
+
+    @media (min-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 48px;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .wrapper {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1600px;
 }
 
-.questions__question {
-    color: #000;
-    font-weight: 500;
-}
+@import 'components/header';
+@import 'components/how';
+@import 'components/intro';
+@import 'components/portfolio';
+@import 'components/questions';
+@import 'components/section';
