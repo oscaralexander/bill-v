@@ -20,7 +20,7 @@
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
-    font-family: Inter, sans-serif;
+    font-family: 'Nunito Sans', Inter, sans-serif;
     font-size: 18px;
     line-height: 1.5;
 
@@ -58,7 +58,7 @@ h1, h2 {
 
 h1 {
     font-size: 64px;
-    font-weight: 800;
+    font-weight: 900;
 
     @media (min-width: 768px) {
         font-size: 128px;
@@ -71,7 +71,7 @@ h1 {
 
 h2 {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1em;
 
     @media (min-width: 768px) {
