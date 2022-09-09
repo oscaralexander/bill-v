@@ -17,6 +17,11 @@
     -webkit-font-smoothing: antialiased;
 }
 
+@keyframes underline {
+    0% { background-position-x: 0; }
+    100% { background-position-x: -10px; }
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -92,6 +97,19 @@ img {
 .wrapper {
     margin: 0 auto;
     max-width: 1600px;
+}
+
+.underline {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5"><path d="M0,1c2.49983,0,2.49983,3.00007,4.99966,3.00007,2.50017,0,2.50017-3.00007,5.00034-3.00007" fill="none" stroke="%231C2023" stroke-miterlimit="10"/></svg>');
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    background-size: 10px 5px;
+    color: var(--color-text);
+    text-decoration: none;
+    
+    &:hover {
+        animation: underline 500ms linear infinite;
+    }
 }
 
 @import 'components/header';
