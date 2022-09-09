@@ -6,6 +6,7 @@
     position: sticky;
     top: 0;
     width: calc(100vw - 12px);
+    transform: skewY(calc(var(--scroll-velocity) * 0.1deg));
 
     @media (min-width: 768px) {
         margin-top: -112px;

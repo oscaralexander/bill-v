@@ -8,6 +8,10 @@ const lenis = new Lenis({
     smooth: true,
 });
 
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+    document.body.style.setProperty('--scroll-velocity', velocity);
+});
+
 const raf = () => {
     lenis.raf();
     requestAnimationFrame(raf);
