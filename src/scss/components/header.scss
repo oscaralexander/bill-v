@@ -2,7 +2,6 @@
     margin-left: 12px;
     padding-top: 40px;
     position: relative;
-    transform: skewY(calc(var(--scroll-velocity) * 0.1deg));
     width: calc(100vw - 12px);
     z-index: 2;
 
